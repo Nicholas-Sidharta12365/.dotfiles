@@ -396,7 +396,9 @@ exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # set wallpaper
 #custom bg using feh
-exec --no-startup-id feh --bg-fill nico/pictures\ \&\ movies/Blue\ Archive/Enhanced/1.jpg
+#exec --no-startup-id feh --bg-fill nico/pictures\ \&\ movies/Blue\ Archive/Enhanced/1.jpg
+# Using video
+exec --no-startup-id xwinwrap -fs -ov -ni -- mpv -wid WID -loop ~/nico/pictures\ \&\ movies/Blue\ Archive/azusa.mp4
 #default bg (exec any to restore to default)
 #exec --no-startup-id sleep 2 && nitrogen --restore
 #exec --no-startup-id feh --bg-fill /usr/share/endeavouros/backgrounds/endeavouros_i3.png
